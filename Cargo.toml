@@ -1,14 +1,14 @@
 [package]
-name = "slcan_fd"
+name = "slcan"
 version = "0.1.4"
 edition = "2021"
-description = "Serial-line CAN bus (slcan) interface with support for CAN FD"
-authors = ["Adrian Wowk <adrian@adom.inc>"]
+description = "Serial line CAN (slcan) interface implementation in Rust"
+authors = ["Millan Kumar <millankumar@gmail.com", "Adrian Wowk <adrian@adom.inc>"]
 license = "MIT"
 
-homepage = "https://github.com/adom-inc/slcan_fd"
-repository = "https://github.com/adom-inc/slcan_fd.git"
-readme = "README.md"
+homepage = "https://github.com/LelsersLasers/slcan"
+repository = "https://github.com/LelsersLasers/slcan"
+readme = "./README.md"
 keywords = ["can", "slcan", "can fd", "fd", "slcan_fd", "canable", "canable2"]
 
 [dependencies]
