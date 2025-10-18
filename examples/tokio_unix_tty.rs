@@ -1,4 +1,4 @@
-use slcan_fd::{tokio::CanSocket, NominalBitRate, OperatingMode};
+use slcan::{tokio::CanSocket, NominalBitRate, OperatingMode};
 use tokio_serial::SerialPortBuilderExt;
 
 #[tokio::main]

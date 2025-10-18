@@ -1,5 +1,5 @@
 use serialport::TTYPort;
-use slcan_fd::{sync::CanSocket, NominalBitRate, ReadError};
+use slcan::{sync::CanSocket, NominalBitRate, ReadError};
 
 fn main() -> std::io::Result<()> {
     let arg = std::env::args().nth(1);
@@ -14,7 +14,7 @@ fn main() -> std::io::Result<()> {
     let mut can = CanSocket::<TTYPort>::new(port);
 
     can.close()?;
-    can.set_operating_mode(slcan_fd::OperatingMode::Silent)?;
+    can.set_operating_mode(slcan::OperatingMode::Silent)?;
     can.open(NominalBitRate::Rate500Kbit)?;
 
     loop {
